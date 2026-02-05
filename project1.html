@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Tektur:wght@400..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Tektur:wght@400..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Tektur:wght@400..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .navigation {
+        display: flex;
+        padding: 30px 118px;
+        justify-content: space-between;
+        align-items: center;
+        font-family: inter;
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        color: white;
+      }
+      .en {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: white;
+        font-size: 14px;
+      }
+      .box1 {
+        background-image: url(./back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        height: 1400px;
+        position: relative;
+      }
+
+      .text2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 77px;
+      }
+      .navigation2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 209px;
+
+        font-family: Bebas Neue;
+      }
+      p {
+        margin: 0;
+      }
+      .box2 {
+        display: flex;
+
+        padding: 65px 120px;
+        gap: 200px;
+        justify-content: center;
+        background: #d8e4e9;
+        font-size: 37px;
+        font-family: Bebas Neue;
+        color: rgba(253, 253, 254, 0.8);
+      }
+      .card1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 370px;
+        background-image: url(./card1.png);
+        border-radius: 40px;
+        box-shadow:
+          -8px -8px 0 0 rgba(31, 114, 170, 0.46),
+          8px 8px 0 0 rgba(41, 114, 139, 0.25);
+        position: relative;
+      }
+      .overlay {
+        width: 270px;
+        height: 370px;
+        background-color: black;
+        border-radius: 40px;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+      }
+      .card1:hover .overlay {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      .card2:hover .overlay {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      .card3:hover .overlay {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      .card4:hover .overlay {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+
+      .card1 p {
+        z-index: 1;
+        text-align: center;
+      }
+      .card2 p {
+        z-index: 1;
+        text-align: center;
+      }
+      .card3 p {
+        z-index: 1;
+        text-align: center;
+      }
+      .card4 p {
+        z-index: 1;
+        text-align: center;
+      }
+      .card2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 370px;
+        background-image: url(./card2.png);
+        border-radius: 40px;
+        box-shadow:
+          -8px -8px 0 0 rgba(31, 114, 170, 0.46),
+          8px 8px 0 0 rgba(41, 114, 139, 0.25);
+        position: relative;
+      }
+      .card3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 370px;
+        background-image: url(./card3.png);
+        border-radius: 40px;
+        box-shadow:
+          -8px -8px 0 0 rgba(31, 114, 170, 0.46),
+          8px 8px 0 0 rgba(41, 114, 139, 0.25);
+        position: relative;
+      }
+      .card4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 370px;
+        background-image: url(./card4.png);
+        border-radius: 40px;
+        box-shadow:
+          -8px -8px 0 0 rgba(31, 114, 170, 0.46),
+          8px 8px 0 0 rgba(41, 114, 139, 0.25);
+        position: relative;
+      }
+      .box3 {
+        display: flex;
+        background-image: url(./map.png);
+        background-size: cover;
+        background-position: center;
+        font-family: inter;
+        height: 1100px;
+        flex-direction: column;
+        position: relative;
+        gap: 30px;
+      }
+      .head {
+        display: flex;
+        height: 204px;
+        flex-direction: column;
+        align-items: center;
+        font-family: inter;
+        justify-content: center;
+        background: linear-gradient(
+          0deg,
+          rgba(216, 228, 233, 0) 0%,
+          rgba(216, 228, 233, 0.9) 100%
+        );
+        gap: 10px;
+      }
+      .card-size {
+        display: flex;
+        width: 513px;
+        height: 55px;
+        padding: 30px;
+        align-items: center;
+        justify-content: space-between;
+
+        border-radius: 120px;
+        background: #eee9d9;
+      }
+      .CONTAINERS {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .CONT1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .continfo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .CONTAINER1 {
+        border: 4px solid rgb(255, 255, 255, 0);
+      }
+      .CONTAINER1:hover {
+        border: 4px solid rgb(255, 255, 255, 1);
+        transition: 0.3s;
+      }
+      .CONTAINER2 {
+        background-color: #9ac0c9;
+        position: relative;
+        border: 4px solid rgb(255, 255, 255, 0);
+      }
+      .CONTAINER2:hover {
+        border: 4px solid rgb(255, 255, 255, 1);
+        transition: 0.3s;
+      }
+      .CONTAINER3 {
+        background-color: #b3dadb;
+        border: 4px solid rgb(255, 255, 255, 0);
+      }
+      .CONTAINER3:hover {
+        border: 4px solid rgb(255, 255, 255, 1);
+        transition: 0.3s;
+      }
+      .CONTAINER4 {
+        background-color: #9ac7c6;
+        border: 4px solid rgb(255, 255, 255, 0);
+      }
+      .CONTAINER4:hover {
+        border: 4px solid rgb(255, 255, 255, 1);
+        transition: 0.3s;
+      }
+      .CONTAINER5 {
+        background-color: #a4d1e2;
+        border: 4px solid rgb(255, 255, 255, 0);
+      }
+      .CONTAINER5:hover {
+        border: 4px solid rgb(255, 255, 255, 1);
+        transition: 0.3s;
+      }
+
+      .BODY {
+        display: flex;
+        padding-left: 200px;
+        justify-content: space-around;
+        justify-content: flex-start;
+      }
+      .box4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 1120px;
+        background-color: antiquewhite;
+        background-image: url(./box4.png);
+        background-size: cover;
+        background-position: center;
+      }
+      .tolgoi {
+        width: 100%;
+        display: flex;
+        height: 150px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(
+          0deg,
+          rgba(216, 228, 233, 0) 0%,
+          #d8e4e9 100%
+        );
+      }
+      .tolgoi1 {
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-weight: bolder;
+      }
+      .tolgoi2 {
+        color: rgba(24, 24, 27, 0.7);
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .bie {
+        display: flex;
+        width: 1200px;
+        height: 527px;
+        font-weight: bold;
+        justify-content: space-between;
+      }
+      .price1 {
+        display: flex;
+        flex-direction: column;
+        width: 384px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 40px;
+      }
+      .price1:hover {
+        box-shadow:
+          -8px -8px 0 0 rgba(31, 114, 170, 0.46),
+          8px 8px 0 0 rgba(41, 114, 139, 0.25);
+        transition: 0.5s;
+      }
+      .price1:hover .button {
+        background-color: rgba(0, 0, 0, 0.848);
+        color: white;
+        transition: 0.5s;
+      }
+      .price2 {
+        display: flex;
+        flex-direction: column;
+        width: 384px;
+        height: 100%;
+        background-color: rgb(254, 254, 254);
+        border-radius: 40px;
+      }
+      .price2:hover {
+        box-shadow:
+          -8px -8px 0 0 rgba(31, 114, 170, 0.46),
+          8px 8px 0 0 rgba(41, 114, 139, 0.25);
+        transition: 0.5s;
+      }
+      .price2:hover .button {
+        background-color: rgba(0, 0, 0, 0.848);
+        color: white;
+        transition: 0.5s;
+      }
+      .price3 {
+        display: flex;
+        flex-direction: column;
+        width: 384px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 40px;
+      }
+      .price3:hover {
+        box-shadow:
+          -8px -8px 0 0 rgba(31, 114, 170, 0.46),
+          8px 8px 0 0 rgba(41, 114, 139, 0.25);
+        transition: 0.5s;
+      }
+      .price3:hover .button {
+        background-color: rgba(0, 0, 0, 0.848);
+        color: white;
+        transition: 0.5s;
+      }
+      .header {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 32px;
+        color: var(--Text-TextPrimary, #121316);
+        font-family: Inter;
+        font-size: 18px;
+      }
+      .detal {
+        display: flex;
+        flex-direction: column;
+        width: 336px;
+        height: 290px;
+        gap: 32px;
+      }
+      .content {
+        width: 384px;
+        height: 435px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+        gap: 10px;
+        flex-direction: column;
+
+        justify-content: space-between;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 336px;
+        height: 48px;
+        border-radius: 30px;
+        background-color: #a4d1e2;
+        font-family: inter;
+        font-size: 16px;
+      }
+
+      .checks {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        align-self: stretch;
+      }
+      .pricetag {
+        display: flex;
+        padding-left: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 336px;
+        height: 78px;
+      }
+      .cotinaar {
+        font-family: inter;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 336px;
+        height: 180px;
+      }
+      .includes {
+        margin-left: 40px;
+        color: var(--Text-TextPrimary, #121316);
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .svvl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: Montserrat;
+        font-weight: bolder;
+        font-size: 18px;
+        height: 204px;
+      }
+      .navige {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1700px;
+        height: 44px;
+        color: #6972b5;
+      }
+      .left {
+        display: flex;
+        justify-content: space-between;
+        width: 358px;
+        height: 44px;
+      }
+      .fb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 170px;
+        height: 44px;
+        border-radius: 18px;
+        background-color: white;
+        padding-left: 3px;
+      }
+      .instga {
+        gap: 8px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 170px;
+        height: 44px;
+        border-radius: 18px;
+        background-color: white;
+        padding-left: 3px;
+      }
+      .PIN1 {
+        width: 34px;
+        height: 34px;
+        position: absolute;
+      }
+      .P1 {
+        right: 950px;
+        top: 240px;
+      }
+      .P2 {
+        top: 370px;
+        right: 600px;
+      }
+      .P3 {
+        top: 600px;
+        right: 850px;
+      }
+      .P4 {
+        top: 900px;
+        right: 700px;
+      }
+      .P5 {
+        right: 350px;
+        top: 600px;
+      }
+      .pics {
+        width: 210px;
+        height: 210px;
+      }
+      .pic1 {
+        right: 275px;
+        top: 510px;
+        position: absolute;
+        display: none;
+      }
+      .pic2 {
+        top: 300px;
+        right: 500px;
+        position: absolute;
+        display: none;
+      }
+      .pic3 {
+        top: 530px;
+        right: 750px;
+        position: absolute;
+        display: none;
+      }
+      .pic4 {
+        top: 185px;
+        right: 880px;
+        position: absolute;
+        display: none;
+      }
+      .pic5 {
+        top: 280px;
+        right: 600px;
+        position: absolute;
+        display: none;
+      }
+      .CONTAINER1:hover ~ .zuragnuud > .pic1 {
+        display: block;
+      }
+      .CONTAINER2:hover ~ .zuragnuud > .pic2 {
+        display: block;
+      }
+      .CONTAINER3:hover ~ .zuragnuud > .pic3 {
+        display: block;
+      }
+      .CONTAINER4:hover ~ .zuragnuud > .pic4 {
+        display: block;
+      }
+      .CONTAINER5:hover ~ .zuragnuud > .pic5 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body style="margin: 0">
+    <div class="box1">
+      <div class="navigation">
+        <div class="logo">
+          <img
+            style="width: 100px; height: 34px; flex-shrink: 0"
+            src="./1.png"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact</p>
+          <img src="./user.svg" alt="" />
+        </div>
+        <div class="en">
+          <p>EN</p>
+        </div>
+      </div>
+
+      <div class="navigation2">
+        <div class="text2">
+          <p style="color: rgba(232, 237, 242, 0.72); font-size: 80px">
+            PURE MAGIC
+          </p>
+          <p style="color: rgba(253, 253, 254, 0.98); font-size: 250px">
+            AWAITS!
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.72); font-size: 64px">2026</p>
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="card1">
+        <p style="text-align: center">TERKHIIN TSAGAAN LAKE</p>
+        <div class="overlay"></div>
+      </div>
+      <div class="card2">
+        <p style="text-align: center">AMARBAYASGALANT MONASTERY</p>
+        <div class="overlay"></div>
+      </div>
+      <div class="card3">
+        <p style="text-align: center">KHUVSGUL LAKE</p>
+        <div class="overlay"></div>
+      </div>
+      <div class="card4">
+        <p style="text-align: center">KHORGIIN TOGOO</p>
+        <div class="overlay"></div>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="head">
+        <div>
+          <h2 style="font-size: 42px; margin: 0">Destination of our Agency</h2>
+        </div>
+        <div>
+          <p style="font-size: 20px; color: rgba(24, 24, 27, 0.7)">
+            pack your bags and ger ready
+          </p>
+        </div>
+      </div>
+
+      <div class="BODY">
+        <div class="CONTAINERS">
+          <div class="CONTAINER1 card-size">
+            <div class="CONT1">
+              <p style="margin: 0; font-size: 24px; font-family: inter">
+                Sukhbaatar square
+              </p>
+              <div class="continfo">
+                <img
+                  style="width: 14px; height: 14px"
+                  src="./pin2.png"
+                  alt=""
+                />
+                <p style="font-family: Montserrat">ulaanbator</p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                width: 52px;
+                height: 52px;
+                background-color: white;
+                border-radius: 100%;
+                font-size: 14px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              DAY1
+            </div>
+          </div>
+          <div class="CONTAINER2 card-size">
+            <div class="CONT1">
+              <p style="margin: 0; font-size: 24px; font-family: inter">
+                Amarbayasgalant monastery
+              </p>
+              <div class="continfo">
+                <img
+                  style="width: 14px; height: 14px"
+                  src="./pin2.png"
+                  alt=""
+                />
+                <p style="font-family: Montserrat">bulgan</p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                width: 52px;
+                height: 52px;
+                background-color: white;
+                border-radius: 100%;
+                font-size: 14px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              DAY2
+            </div>
+          </div>
+          <div class="CONTAINER3 card-size">
+            <div class="CONT1">
+              <p style="margin: 0; font-size: 24px; font-family: inter">
+                Khorgiin togoi
+              </p>
+              <div class="continfo">
+                <img
+                  style="width: 14px; height: 14px"
+                  src="./pin2.png"
+                  alt=""
+                />
+                <p style="font-family: Montserrat">arkhangai</p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                width: 52px;
+                height: 52px;
+                background-color: white;
+                border-radius: 100%;
+                font-size: 14px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              DAY3
+            </div>
+          </div>
+          <div class="CONTAINER4 card-size">
+            <div class="CONT1">
+              <p style="margin: 0; font-size: 24px; font-family: inter">
+                Terkhiin tsagaan lake
+              </p>
+              <div class="continfo">
+                <img
+                  style="width: 14px; height: 14px"
+                  src="./pin2.png"
+                  alt=""
+                />
+                <p style="font-family: Montserrat">arkhangai</p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                width: 52px;
+                height: 52px;
+                background-color: white;
+                border-radius: 100%;
+                font-size: 14px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              DAY4
+            </div>
+          </div>
+          <div class="CONTAINER5 card-size">
+            <div class="CONT1">
+              <p style="margin: 0; font-size: 24px; font-family: inter">
+                khuvsgul lake
+              </p>
+              <div class="continfo">
+                <img
+                  style="width: 14px; height: 14px"
+                  src="./pin2.png"
+                  alt=""
+                />
+                <p style="font-family: Montserrat">khuvsgul</p>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                width: 52px;
+                height: 52px;
+                background-color: white;
+                border-radius: 100%;
+                font-size: 14px;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              DAY5
+            </div>
+          </div>
+          <div class="zuragnuud">
+            <img class="pics pic1" src="./suhbaatar.png" alt="" />
+            <img class="pics pic2" src="./amarbayasgalant.png" alt="" />
+            <img class="pics pic3" src="./togoo.png" alt="" />
+            <img class="pics pic4" src="./terkhiin tsagaan.png" alt="" />
+            <img class="pics pic5" src="./khuvsgul.png" alt="" />
+          </div>
+        </div>
+        <div class="MAPPINS">
+          <div><img class="PIN1 P1" src="./pin.png" /></div>
+          <div><img class="PIN1 P2" src="./pin.png" /></div>
+          <div><img class="PIN1 P3" src="./pin.png" /></div>
+          <div><img class="PIN1 P4" src="./pin.png" /></div>
+          <div><img class="PIN1 P5" src="./pin.png" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="box4">
+      <div class="tolgoi">
+        <p class="tolgoi1">Pricing of Our Agency</p>
+        <p class="tolgoi2">choose a package thats right for you</p>
+      </div>
+      <div class="bie">
+        <div class="price1">
+          <div class="header">
+            <img style="width: 36px; height: 36px" src="./zurh2.png" alt="" />
+            <p>Budget Package</p>
+          </div>
+          <div class="content">
+            <div class="detal">
+              <div class="pricetag">
+                <p style="font-size: 40px; font-family: Montserrat">500$</p>
+                <p style="font-size: 15px; color: #919191; font-family: inter">
+                  Essentials Covered
+                </p>
+              </div>
+              <div class="cotinaar">
+                <p class="includes">Includes:</p>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Group transportation</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Standar accammodation</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Guided like tour</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>1 Meal per day</p>
+                </div>
+              </div>
+            </div>
+            <div class="button">Select Package</div>
+          </div>
+        </div>
+        <div class="price2">
+          <div class="header">
+            <img style="width: 36px; height: 36px" src="./zurh2.png" alt="" />
+            <p>Budget Package</p>
+          </div>
+          <div class="content">
+            <div class="detal">
+              <div class="pricetag">
+                <p style="font-size: 40px; font-family: Montserrat">800$</p>
+                <p style="font-size: 15px; color: #919191; font-family: inter">
+                  Balanced Adventures
+                </p>
+              </div>
+              <div class="cotinaar">
+                <p class="includes">Includes:</p>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Group transportation</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Standar accammodation</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Guided like tour</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>1 Meal per day</p>
+                </div>
+              </div>
+            </div>
+            <div class="button">Select Package</div>
+          </div>
+        </div>
+        <div class="price3">
+          <div class="header">
+            <img style="width: 36px; height: 36px" src="./zurh2.png" alt="" />
+            <p>Budget Package</p>
+          </div>
+          <div class="content">
+            <div class="detal">
+              <div class="pricetag">
+                <p style="font-size: 40px; font-family: Montserrat">1200$</p>
+                <p style="font-size: 15px; color: #919191; font-family: inter">
+                  Ultimate Comfort
+                </p>
+              </div>
+              <div class="cotinaar">
+                <p class="includes">Includes:</p>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Group transportation</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Standar accammodation</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>Guided like tour</p>
+                </div>
+                <div class="checks">
+                  <img src="./check.svg" alt="" />
+                  <p>1 Meal per day</p>
+                </div>
+              </div>
+            </div>
+            <div class="button">Select Package</div>
+          </div>
+        </div>
+      </div>
+      <div class="svvl">
+        <div class="navige">
+          <div class="left">
+            <div class="fb">
+              <img
+                style="width: 24px; height: 24px"
+                src="./Facebook Icon.svg"
+                alt=""
+              />
+              <p>Facebook</p>
+            </div>
+            <div class="instga">
+              <img src="./Instagram Icon.svg" alt="" />
+              <p>Instagramm</p>
+            </div>
+          </div>
+          <div class="right">
+            <img style="width: 101px; height: 35px" src="./tour.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
