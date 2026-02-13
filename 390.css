@@ -1,0 +1,125 @@
+@media (max-width: 390px) {
+    .back1{
+        background-image: url(./mobileip16pro.jpg);
+    background-size: cover;
+  
+
+    }
+    .body{
+        margin: 0;
+    }
+  .navi2{
+    margin-top: 10px;
+  }
+    .navbichig{
+        text-align: center;
+
+        margin-left: 10px;
+        margin-right: 10px;
+     
+    }
+.back1{
+align-items: flex-end;
+}
+.info1{
+    margin-bottom: 36px;
+}
+.back2{
+    background-image: url(./mobip16.jpg);
+}
+
+.cards{
+    height: 100%;
+}
+.naluu1{
+    flex-direction: column;
+    height: 100%;
+gap: 10px;
+}
+.naluu2{
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+
+}.naluu3{
+    flex-direction: column;
+    height: 100%;
+gap: 10px;
+}
+.card1{
+    width: 100%;
+    height: 550px;
+}
+.card2{
+    width: 100%;
+    height: 550px;
+}
+.card3{
+    width: 100%;
+    height: 550px;
+}
+.card4{
+    width: 100%;
+    height: 550px;
+}
+.card5{
+    width: 100%;
+    height: 550px;
+}
+.card6{
+    width: 100%;
+    height: 550px;
+}
+
+.hemjee{
+      min-width: 274px;
+    height: 495px;
+}
+.movie1{
+    background-image: url(./mobmovie.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,93 @@
+@media (max-width: 768px) {
+.body{
+    margin: 0;
+}
+    .godfather {
+   
+}
+.burger{
+    display: block;
+}
+.navigation{
+    flex-shrink: 0;
+   
+}
+.navbichig{
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.navtext{
+    display: none;
+}
+.nav1applogo{
+    margin-left: 20px;
+}
+.navi1{
+ 
+ 
+  
+    height: 48px;
+    justify-content: space-between;
+}
+.logs{
+  margin-right: 20px;
+}
+.navi2{
+
+}
+.backgrounds{
+    
+}
+.back1{
+    background-image: url(./768ip16pro.jpg);
+     background-size: cover;
+    
+}
+.back2{
+    background-image: url(./768ip16.jpg);
+    background-size: cover;
+}
+.back3{
+   
+    background-size: cover;
+}
+.cards{
+    height: 1740px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+.card2{
+    background-image: url(./768ipod.jpg);
+}
+
+
+.card3{
+    background-image: url(./768watch.jpg);
+}
+.card6{
+    background-image: url(./768card4.png);
+}
+
+.hemjee{
+      min-width: 689px;
+    height: 368px;
+}
+.movie1{
+    background-image: url(./769blitz.jpg);
+}
+.none1{
+    display: block;
+    font-size: smaller;
+    margin-left: 10px;
+}
+.block1{
+    display: none;
+}
+.mobie {
+  min-width: 286px;
+  height: 161px;
+  background-size: cover;
+}
+}
